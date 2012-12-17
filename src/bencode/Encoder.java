@@ -15,9 +15,7 @@ public class Encoder {
 	public String encode(Object o) throws NullPointerException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		StringBuilder st = new StringBuilder();
 		this.encode(o, st);
-		String nnnn = st.toString();
-		System.out.println(nnnn);
-		return nnnn;
+		return st.toString();
 	}
 	
 	private void encode(Object o, StringBuilder st) throws NullPointerException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
